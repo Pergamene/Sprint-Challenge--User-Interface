@@ -80,51 +80,104 @@ p {
 
 .header-nav {
   display: flex;
-  flex: 1;
   justify-content: space-around;
+  flex: 1;
 }
 
 .header-nav a {
   color: #000;
   text-decoration: none;
   font-size: 14px;
+  padding: 25px 40px 0;
+}
+
+.header-nav a:hover {
+  background: #000;
+  color: #fff;
 }
 
 .banner-container {
   margin-bottom: 20px;
 }
 
-.top-content {
+/* Underline */
+.underline {
+  border-bottom: 1px dashed black;
+  margin-bottom: 20px;
+}
+
+/* One Column */
+.one-column-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  padding: 0 2.5%;
+  padding-bottom: 20px;
+}
+
+/* Two Columns */
+.two-column-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-bottom: 20px;
-  border-bottom: 1px dashed black;
+  /* border: 1px solid red; */
 }
 
-.top-content .text-container {
+.half-column-content {
   width: 48%;
   padding: 0 1%;
-  padding-bottom: 20px;  
+  padding-bottom: 20px;
+  /* border: 1px solid black; */
 }
 
-.middle-content {
-  margin-bottom: 20px;
-  border-bottom: 1px dashed black;
+.half-column-content img {
+  max-width: 100%;
+  padding: 10px 0;
 }
 
-.middle-content h2 {
+/* Three Columns */
+.three-column-container {
+  display: flex;
+  margin: 0 2% 20px;
+  justify-content: space-around;
+}
+
+.third-column-content {
+  padding-right: 4%;
+}
+
+.third-column-content:last-child {
+  padding-right: 0;
+}
+
+/* Buttons */
+button {
+  background: none;
+  padding: 10px 25px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Boxes */
+.boxes-container h2 {
   padding: 0 2%;
   margin-bottom: 0;
 }
 
-.middle-content .boxes {
+.boxes-container .boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.boxes-container .boxes .box {
   width: 12.5%;
   height: 100px;
   margin: 20px 2.5%;
@@ -134,7 +187,6 @@ p {
   justify-content: center;
 }
 
-/* Box Colors */
 .one {
   background-color: teal;
 }
@@ -175,20 +227,7 @@ p {
   background-color: dodgerblue;
 }
 
-.bottom-content {
-  display: flex;
-  margin: 0 2% 20px;
-  justify-content: space-around;
-}
-
-.bottom-content .text-container {
-  padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-  padding-right: 0;
-}
-
+/* Footer Nav */
 footer {
   width: 100%;
   background: black;
@@ -206,4 +245,16 @@ footer nav {
 footer nav a {
   color: white;
   text-decoration: none;
+}
+
+/* Extra CSS for spacing on About Page */
+.about-page .half-column-content {
+  padding-left: 0;
+  padding-right: 0;
+  width: 44%;
+  align-content: flex-start;
+}
+
+.half-column-content.underline {
+  margin-bottom: 50px;
 }
