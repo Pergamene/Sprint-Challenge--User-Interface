@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+  v2.0 | 20110126
+  License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -16,131 +16,275 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-family: 'Rubik', sans-serif;
 }
 
 p {
-    line-height: 1.4;
+  line-height: 1.4;
 }
 
 .container {
-    width: 800px;
-    margin: 0 auto;
+  width: 800px;
+  margin: 0 auto;
 }
 
-.top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+/* Header */
+.nav-container {
+  display: flex;
+  align-items: flex-end;
+  margin: 20px 0 40px;
 }
 
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
 }
 
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+.header-nav a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 25px 40px 0;
 }
 
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+.header-nav a:hover {
+  background: #000;
+  color: #fff;
 }
 
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.banner-container {
+  margin-bottom: 20px;
 }
 
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Underline */
+.underline {
+  border-bottom: 1px dashed black;
+  margin-bottom: 20px;
 }
 
-.bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+/* One Column */
+.one-column-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  padding: 0 2.5%;
+  padding-bottom: 20px;
 }
 
-.bottom-content .text-container {
-    padding-right: 4%;
+/* Two Columns */
+.two-column-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.bottom-content .text-container:last-child {
-    padding-right: 0;
+.half-column-content {
+  width: 48%;
+  padding: 0 1%;
+  padding-bottom: 20px;
 }
 
+.half-column-content img {
+  max-width: 100%;
+  padding: 10px 0;
+}
+
+/* Three Columns */
+.three-column-container {
+  display: flex;
+  margin: 0 2% 20px;
+  justify-content: space-around;
+}
+
+.third-column-content {
+  padding-right: 4%;
+}
+
+.third-column-content:last-child {
+  padding-right: 0;
+}
+
+/* Buttons */
+button {
+  background: none;
+  padding: 10px 25px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Contact */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 20px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  height: 30px;
+}
+
+textarea {
+  height: 150px;
+}
+
+.input-box {
+  border: 2px solid #000;
+}
+
+.contact-page button {
+  margin-top: 0;
+}
+
+.contact-page .one-column-container {
+  margin: 0;
+  padding-top: 10px;
+}
+
+/* Boxes */
+.boxes-container h2 {
+  padding: 0 2%;
+  margin-bottom: 0;
+}
+
+.boxes-container .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.boxes-container .boxes .box {
+  width: 12.5%;
+  height: 100px;
+  margin: 20px 2.5%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.one {
+  background-color: teal;
+}
+
+.two {
+  background-color: gold;
+}
+
+.three {
+  background-color: cadetblue;
+}
+
+.four {
+  background-color: coral;
+}
+
+.five {
+  background-color: crimson;
+}
+
+.six {
+  background-color: forestgreen;
+}
+
+.seven {
+  background-color: darkorchid;
+}
+
+.eight {
+  background-color: hotpink;
+}
+
+.nine {
+  background-color: indigo;
+}
+
+.ten {
+  background-color: dodgerblue;
+}
+
+/* Footer Nav */
 footer {
-    width: 100%;
-    background: black;
+  width: 100%;
+  background: black;
 }
 
 footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2%;
+  font-size: 14px;
 }
 
 footer nav a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
+}
+
+/* Extra CSS for spacing on About Page */
+.about-page .half-column-content {
+  padding-left: 0;
+  padding-right: 0;
+  width: 44%;
+  align-content: flex-start;
+}
+
+.half-column-content.underline {
+  margin-bottom: 50px;
 }
