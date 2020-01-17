@@ -120,14 +120,12 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  /* border: 1px solid red; */
 }
 
 .half-column-content {
   width: 48%;
   padding: 0 1%;
   padding-bottom: 20px;
-  /* border: 1px solid black; */
 }
 
 .half-column-content img {
@@ -163,6 +161,38 @@ button {
 button:hover {
   background: #000;
   color: #fff;
+}
+
+/* Contact */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 20px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  height: 30px;
+}
+
+textarea {
+  height: 150px;
+}
+
+.input-box {
+  border: 2px solid #000;
+}
+
+.contact-page button {
+  margin-top: 0;
+}
+
+.contact-page .one-column-container {
+  margin: 0;
+  padding-top: 10px;
 }
 
 /* Boxes */
