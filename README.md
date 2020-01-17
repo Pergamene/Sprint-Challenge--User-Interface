@@ -42,10 +42,12 @@ Edit this document to include your answers after each question. Make sure to lea
 
 3. What are the 4 areas of the box model?
 
-```1. Content - the stuff that is displayed.
-   2. Padding - the space between the content and the border (visible or not).
-   3. Border - a line that can be set around the content and padding.
-   4. Margin - the space between the border and the surrounding elements.```
+```
+1. Content - the stuff that is displayed.
+2. Padding - the space between the content and the border (visible or not).
+3. Border - a line that can be set around the content and padding.
+4. Margin - the space between the border and the surrounding elements.
+```
 
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
